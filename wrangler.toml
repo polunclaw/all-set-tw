@@ -1,0 +1,9 @@
+# Deploy to Cloudflare reads this template before the deploy command runs.
+# Stateful bindings are allocated for the individual Worker during deployment.
+name = "all-set-tw"
+main = "apps/worker/src/index.ts"
+compatibility_date = "2026-06-01"
+compatibility_flags = ["nodejs_compat"]
+preview_urls = false
+browser = { binding = "BROWSER" }
+ai = { binding = "AI" }
